@@ -1,0 +1,11 @@
+section#parte-2 .container {
+    flex-direction: column;
+}
+
+section#parte-2 .container div {
+    margin-bottom: 10px;
+}
+
+footer nav {
+ display: none;
+}

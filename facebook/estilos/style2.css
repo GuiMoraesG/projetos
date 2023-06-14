@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+section {
+    display: grid;
+}
+
+div.texto h1 {
+    text-align: center;
+}
+
+div.texto p {
+    font-size: 1.6rem;
+}

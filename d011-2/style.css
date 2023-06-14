@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Tangsa:wght@600&family=Passion+One:wght@400;700&family=Stardos+Stencil:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Tangsa:wght@600&family=Passion+One:wght@400;700&family=Stardos+Stencil:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: rgba(169, 169, 169, 0.568);
+}
+
+:root {
+    --font-passion:  'Passion One', cursive;
+    --font2: 'Noto Sans Tangsa', sans-serif;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+}
+
+header > h1 {
+    font-family: var(--font-passion);
+    font-size: 5vw;
+    font-variant: small-caps;
+}
+
+header p {
+    font-family: var(--font2);
+    padding-bottom: 40px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 10vh 0 10vh 30px;
+}
+
+section p {
+    font-family: var(--font2);
+    font-size: 2em;
+    line-height: 60px;
+    padding-bottom: 64px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.384);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.445);
+    text-shadow: 2px 2px 0 black;
+}
+
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.438);
+    padding: 15px;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: var(--font2);
+    font-weight: normal;
+}

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(122, 122, 236);
+}
+
+h1 {
+    text-align: center;
+
+    color: white;
+
+    font-size: 3rem;
+}
+
+main {
+    margin: auto;
+
+    max-width: 500px;
+
+    background-color: white;
+
+    padding: 15px;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.363);
+
+    border-radius: 8px;
+
+    font-size: 1.2rem;
+}
+
+main input[type=number] {
+    width: 45%;
+
+    margin-bottom: 25px;
+}
+
+main input[type=button] {
+    width: 100px;
+    
+    padding: 8px;
+
+    background-color: rgb(107, 214, 214);
+
+    border: 1px solid rgb(107, 214, 214);
+
+    cursor: pointer;
+}
+
+main input[type=button]:hover {
+    background-color: rgba(107, 214, 214, 0.411);
+}
+
+#res {
+    margin-top: 45px;
+}

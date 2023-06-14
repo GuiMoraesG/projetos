@@ -1,0 +1,345 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+}
+
+.checked {
+    color: red;
+}
+
+.container {
+    margin: auto;
+
+    max-width: 1120px;
+
+    padding-top: 85px;
+}
+
+.bg-red {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 250px;
+    height: 60px;
+
+    background-image: url(../imagens/texto-bground-red.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    margin: 25px 0;
+
+    color: white;
+
+    font-size: 1.5rem;
+
+    padding: 13px 30px;
+}
+
+.bg-red:nth-of-type(2) {
+    width: 200px;
+}
+
+.bg-red:nth-of-type(3) {
+    width: 150px;
+}
+
+.bg-red:nth-of-type(4) {
+    width: 280px;
+
+    background-image: url(../imagens/texto-bground-white.png);
+
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1260px;
+
+    margin: auto;
+    padding: 25px 2%;
+}
+
+header a {
+    text-decoration: none;
+
+    color: black;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    padding-right: 50px;
+}
+
+main section#parte-1 {
+    width: 100%;
+    height: 600px;
+
+    background-color: black;
+    background-image: url(../imagens/carro-bground.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    border-top: 2px solid red;
+}
+
+.banner {
+    padding: 0 2%;
+}
+
+section#parte-2 h2 {
+    text-align: center;
+
+    font-size: 2rem;
+
+    margin-top: 85px;
+    margin-bottom: 65px;
+}
+
+section#parte-2 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1100px;
+    width: 100%;
+
+    padding: 0;
+}
+
+.carro-img {
+    width: 100%;
+    padding-top: 100%;
+
+    background-image: url(../imagens/venda.jpg);
+    background-size: 100% 100%;
+}
+
+.box-carro {
+    width: 100%;
+
+    padding: 0 10px;
+}
+
+.box-carro h3 {
+    font-size: 1.4rem;
+
+    padding: 8px 0;
+}
+
+.box-carro p {
+    font-size: 0.9rem;
+
+    color: rgb(105, 103, 103);
+
+    padding-bottom: 25px;
+}
+
+.box-carro button {
+    width: 150px;
+    height: 55px;
+
+    font-size: 1.3rem;
+
+    background-color: rgb(216, 26, 26);
+    color: white;
+
+    border: none;
+    border-bottom: 5px solid darkred;
+
+    cursor: pointer;
+}
+
+section#parte-3 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: 150px;
+}
+
+#service-area {
+    background-color: #242424;
+    color: white;
+
+    width: 50%;
+    height: 300px;
+
+    font-size: 20px;
+
+    padding: 25px 2%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#service-area ul {
+    display: inline-block;
+
+    margin-right: 40px;
+}
+
+#service-area li::marker {
+    content: '• ';
+
+    color: white;
+}
+
+#parte-3 a {
+    width: 150px;
+    height: 55px;
+
+    padding: 10px 20px;
+
+    font-size: 1.3rem;
+
+    background-color: rgb(216, 26, 26);
+    color: white;
+
+    border: none;
+    border-bottom: 5px solid darkred;
+
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+#caixa1 {
+    width: 430px;
+}
+
+#depoiment-area {
+    color: white;
+    background-color: #e82d2d;
+
+    height: 300px;
+    width: 50%;
+
+    font-size: 20px;
+}
+
+#caixa2 {
+    max-width: 100%;
+
+    padding: 70px 2%;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#parte-4 h2 {
+    text-align: center;
+
+    font-size: 2rem;
+
+    margin-top: 85px;
+    margin-bottom: 65px;
+}
+
+#parte-4 .container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    padding-top: 0px;
+}
+
+#parte-4 form {
+    width: 55%;
+
+    text-align: center;
+}
+
+#parte-4 div {
+    padding: 10px 0;
+}
+
+#parte-4 input {
+    padding: 13px;
+
+    font-size: 1.1rem;
+}
+
+#parte-4 .inputName input {
+    width: 100%;
+}
+
+#parte-4 .emailTell input {
+    width: 49%;
+}
+
+#parte-4 input[type=email] {
+    margin-right: 8px;
+}
+
+#parte-4 textarea {
+    width: 100%;
+
+    font-size: 1.1rem;
+
+    padding: 13px;
+}
+
+#parte-4 button {
+    width: 150px;
+    height: 55px;
+
+    font-size: 1.3rem;
+
+    background-color: rgb(216, 26, 26);
+    color: white;
+
+    border: none;
+    border-bottom: 5px solid darkred;
+
+    cursor: pointer;
+
+    margin-top: 25px;
+    margin-bottom: 85px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #242424;
+
+    padding: 40px 2%;
+}
+
+footer a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    padding-right: 50px;
+}
+
+footer p {
+    color: white;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    padding-right: 50px;
+}

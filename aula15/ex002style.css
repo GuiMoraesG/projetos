@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(173, 114, 230);
+}
+
+h1 {
+    text-align: center;
+    
+    color: white;
+
+    font-size: 3rem;
+}
+
+main {
+    background-color: white;
+
+    margin: auto;
+
+    max-width: 500px;
+
+    font-size: 1.2rem;
+
+    text-align: center;
+
+    padding: 8px;
+
+    border-radius: 8px;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.363);
+}
+
+select {
+    margin-top: 25px;
+
+}

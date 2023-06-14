@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+:root {
+    --cor01: #334a7d;
+    --cor02: #dfe1ee;
+    --cor03: #56953e;
+}
+
+main {
+    background-color: var(--cor02);
+    height: 75vh;
+
+    position: relative;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+div.texto {
+    margin-right: 45px;
+    padding: 15px;
+}
+
+div.texto h1 {
+    color: var(--cor01);
+
+    font-size: 3.4rem;
+    margin-bottom: 15px;
+}
+
+div.texto p {
+    max-width: 450px;
+    /* text-align: justify; */
+    font-size: 1.8rem;
+}
+
+form {
+    background-color: white;
+
+    border-radius: 7px;
+
+    text-align: center;
+
+    width: 400px;
+    height: 320px;
+    padding: 10px;
+
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.253);
+}
+
+.caixa input {
+    width: 95%;
+    height: 45px;
+    margin-bottom: 15px;
+
+    border-radius: 7px;
+    border: 2px solid lightgray;
+
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.caixa input:focus {
+    border: 2.2px solid rgb(9, 173, 228);
+}
+
+.logar {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+
+    width: 95%;
+    height: 45px;
+
+    background-color: #56953e;
+    color: white;
+
+    font-size: 1.5rem;
+
+    border: none;
+    border-radius: 7px;
+}
+
+.logar:hover {
+    background-color: #70be51;
+}
+
+form>a {
+    display: block;
+    margin-bottom: 15px;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+}
+
+form>a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin: 15px 0;
+
+    color: lightgray;
+}
+
+.nconta {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 25px;
+
+    width: 45%;
+    height: 45px;
+
+    background-color: #56953e;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    padding: 5px;
+
+    border: none;
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+.nconta:hover {
+    background-color: #70be51;
+}
+
+.formulario > p {
+    width: 400px;
+
+    margin-top: 15px;
+
+    font-size: 0.9rem;
+}
+
+.formulario > p > a {
+    text-decoration: none;
+    color: black;
+}
+
+.formulario > p > a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgb(245, 240, 240);
+    color: gray;
+
+    height: calc(100vh - 75vh);
+
+    font-size: 0.8rem;
+
+    text-align: center;
+
+    padding-top: 30px;
+}
+
+
+#criar {
+    background-color: green;
+
+    width: 500px;
+    height: 500px;
+}

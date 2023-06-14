@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor01: #334a7d;
+    --cor02: #dfe1ee;
+    --cor03: #56953e;
+}
+
+body,
+html {
+    height: 100vh;
+}
+
+header {
+    background-color: var(--cor01);
+
+    height: 80px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section.titulo {
+    color: white;
+
+    font-size: 1.5rem;
+}
+
+.login {
+    display: inline-block;
+}
+
+.login input[type=email],
+input[type=password] {
+    height: 20px;
+
+}
+
+.login input[type=email]:focus,
+input[type=password]:focus {
+    background-color: rgb(214, 189, 124);
+}
+
+.login label {
+    display: block;
+
+    color: white;
+
+    font-size: 0.9rem;
+}
+
+form input[type=submit] {
+    background-color: #213050;
+    color: white;
+
+    width: 60px;
+    height: 25px;
+
+    padding: 3px;
+
+    border-radius: 3px;
+    border: none;
+
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    background-color: #4360a0;
+}
+
+main {
+    background-image: linear-gradient(to top, #dfe1ee, transparent);
+
+    height: 75vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.404);
+}
+
+main h2 {
+    margin-top: 50px;
+
+    max-width: 500px;
+}
+
+main h1,
+p {
+    text-align: left;
+}
+
+main h1 {
+    margin-top: 50px;
+
+    font-size: 2rem;
+}
+
+main p {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form#formulario2 {
+    text-align: left;
+
+    width: 440px;
+    height: 500px;
+}
+
+main input[type=text] {
+    width: 45%;
+    height: 40px;
+
+    margin-top: 20px;
+
+    border-radius: 7px;
+    border: 2px solid lightgray;
+
+    padding: 10px;
+
+    font-size: 1.2rem;
+}
+
+main input[type=email] {
+    width: 90%;
+    height: 40px;
+
+    margin-top: 10px;
+
+    border-radius: 7px;
+    border: 2px solid lightgray;
+
+    padding: 10px;
+
+    font-size: 1.2rem;
+}
+
+main input[type=password] {
+    width: 90%;
+    height: 40px;
+
+    margin-top: 10px;
+
+    border-radius: 7px;
+    border: 2px solid lightgray;
+
+    padding: 10px;
+
+    font-size: 1.2rem;
+}
+
+.datas {
+    margin-top: 20px;
+}
+
+.datas label {
+    display: block;
+
+    font-weight: bold;
+}
+
+.datas input[type=date] {
+    margin-top: 10px;
+
+    height: 30px;
+
+    border: 2px solid lightgray;
+
+    font-size: 1.2rem;
+
+    text-decoration: none;
+
+    appearance: none;
+}
+
+main input[type=radio] {
+    margin-top: 20px;
+}
+
+.esquerda > label {
+    font-size: 1.2rem;
+}
+
+main input[type=submit] {
+    margin-top: 40px;
+
+    width: 40%;
+    height: 40px;
+
+    background-color: #56953e;
+    color: white;
+
+    font-size: 1.1rem;
+
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+hr {
+    margin: 20px 0;
+}

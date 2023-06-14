@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício das Contas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <main>
+        <div>
+            <label for="num1">Início: </label>
+            <input type="number" name="num1" id="num1">
+        </div>
+        <div>
+            <label for="num2">Fim: </label>
+            <input type="number" name="num2" id="num2">
+        </div>
+        <div>
+            <label for="num3">Passo: </label>
+            <input type="number" name="num3" id="num3">
+        </div>
+        <input type="button" value="Contar" onclick="contar()">
+
+        <div id="res">
+            Aqui é onde o resultado irá aparecer....
+        </div>
+    </main>
+
+    <script src="js.js"></script>
+</body>
+</html>

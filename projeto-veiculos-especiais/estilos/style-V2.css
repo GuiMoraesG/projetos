@@ -1,0 +1,35 @@
+main section#parte-1 {
+    background-color: black;
+    background-image: url(../imagens/carro-bground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section#parte-3 {
+    flex-direction: column;
+}
+
+#service-area {
+    width: 100%;
+
+    justify-content: center;
+}
+
+#depoiment-area {
+    width: 100%;
+}
+
+#service-area ul {
+    margin-bottom: 25px;
+}
+
+#caixa1 {
+    width: none;
+
+    padding: 0 3%;
+}
+
+#parte-3 a {
+    display: block;
+}

@@ -1,0 +1,50 @@
+@charset "UTH-8";
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 165px;
+}
+
+aside h2 {
+    font-size: 1.6rem;
+    font-weight: normal;
+
+    padding-bottom: 15px;
+}
+
+aside p#complemento {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+aside section img {
+    width: 100%;
+    height: 80.5%;
+}
+
+aside section.conteudo-direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 450px;
+
+    padding-top: 5px;
+}
+
+aside section.conteudo-esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 450px;
+
+    padding-top: 5px;
+}
+
+section.add {
+    height: 440px;
+}

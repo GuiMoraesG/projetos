@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+header img {
+    width: 176px;
+}
+
+.parte2 {
+    top: -20px;
+}
+
+.servicos {
+    flex-direction: column;
+}
+
+.box01 {
+    max-width: 360px;
+    width: 90%;
+}
+
+.box02 {
+    max-width: 460px;
+    width: 94%;
+}
+
+.box03 {
+    max-width: 360px;
+    width: 90%;
+}
+
+.parte3 {
+    height: auto;
+
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.imagen-fernada {
+    width: 100%;
+    height: 490px;
+}
+
+.sobre-fernada {
+    width: 100%;
+}
+

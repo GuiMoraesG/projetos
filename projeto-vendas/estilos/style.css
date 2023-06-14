@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+    padding: 1%;
+
+    background-color: lightgrey;
+
+    height: 95px;
+}
+
+main {
+    margin: auto;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-image: url(../imagens/bg-form.jpg);
+    background-position: center;
+
+    width: 80vw;
+    height: 80vh;
+
+    padding: 1%;
+
+    border-left: 0.5px solid white;
+    border-right: 0.5px solid white;
+    border-bottom: 0.5px solid white;
+}
+
+main form {
+    background-color: rgba(255, 255, 255, 0.521);
+
+    max-width: 450px;
+    height: 600px;
+
+    text-align: center;
+
+    color: rgb(71, 71, 71);
+
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
+}
+
+form p#motivation {
+    padding: 30px 10px;
+
+    background-color: rgba(255, 255, 255, 0.808);
+
+    height: 20%;
+
+    font-size: 1.6rem;
+}
+
+.login {
+    display: inline-block;
+    width: 80%;
+
+    margin-top: 40px;
+}
+
+form label {
+    display: block;
+
+    text-align: left;
+    font-size: 1.1rem;
+
+    padding-bottom: 2px;
+}
+
+form input {
+    width: 100%;
+    height: 45px;
+
+    padding: 5px;
+
+    font-size: 1.2rem;
+}
+
+form input[type=submit] {
+    display: block;
+
+    margin: auto;
+    margin-top: 25px;
+
+    width: 80%;
+    height: 50px;
+
+    background-color: rgb(61, 61, 134);
+
+    border: none;
+
+    color: white;
+
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+form p#required {
+    margin-top: 40px;
+    margin-left: 45px;
+
+    text-align: left;
+}
+
+form input[type=submit]:hover {
+    background-color: rgb(89, 89, 199);
+}
+
+aside section.conteudo1 {
+    margin: auto;
+
+    border: 0.5px solid white;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: rgb(159, 181, 187);
+    color: rgb(48, 62, 66);
+
+    width: 80vw;
+    height: 245px;
+
+    padding: 1.3%;
+
+    text-align: center;
+}
+
+aside h2 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+aside p#complemento {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+aside section img {
+    width: 60%;
+    height: 99.5%;
+}
+
+aside section.conteudo-direita {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: auto;
+
+    border: 0.5px solid white;
+
+    background-color: rgb(210, 224, 228);
+    color: rgb(48, 62, 66);
+
+    width: 80vw;
+    height: 330px;
+
+    text-align: center;
+}
+
+aside section.conteudo-esquerda {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: auto;
+
+    border: 0.5px solid white;
+
+    background-color: rgb(210, 224, 228);
+    color: rgb(48, 62, 66);
+
+    width: 80vw;
+    height: 330px;
+
+    text-align: center;
+}
+
+aside section.conteudo-direita p {
+    font-size: 1.2rem;
+
+    text-align: justify;
+
+    height: 85px;
+    max-width: 365px;
+
+    padding: 1.1%;
+}
+
+aside section.conteudo-esquerda p {
+    font-size: 1.2rem;
+
+    text-align: justify;
+
+    height: 85px;
+    max-width: 365px;
+
+    padding: 1.1%;
+}
+
+section.add {
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 0.5px solid white;
+    background-color: rgb(235, 243, 247);
+    color: rgb(48, 62, 66);
+
+    width: 80vw;
+    height: 245px;
+
+    padding: 1.3%;
+
+    text-align: center;
+}
+
+section.add h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-size: 1.5rem;
+}
+
+section.add p {
+    margin: auto;
+
+    max-width: 90%;
+
+    line-height: 30px;
+
+    text-decoration: underline;
+
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+footer {
+    margin: 20px 0;
+
+    text-align: center;
+
+    padding: 15px;
+}
+
+footer p {
+    padding-bottom: 30px;
+}
