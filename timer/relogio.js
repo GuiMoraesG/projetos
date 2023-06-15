@@ -13,8 +13,12 @@ class Relogio {
         let hora = data.getHours()
         let min = data.getMinutes()
         let sec = data.getSeconds()
+        let formato = `${hora}:${min}:${sec}`
 
-        return `${hora}:${min}:${sec}`
+        if (min < 10) formato = `${hora}:0${min}:${sec}`
+        if (sec < 10) formato = `${hora}:${min}:0${sec}`
+
+        return formato
     }
 }
 
