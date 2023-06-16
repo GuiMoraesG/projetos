@@ -11,9 +11,8 @@ class Lista {
         this.btn.addEventListener('click', () => {
             if (this.item.value === '') { return }
 
-            let li = this.criarLi(this.item)
+            this.criarLi(this.item.value)
 
-            this.ul.appendChild(li)
             this.item.value = ''
             this.item.focus()
             this.salvarTarefas()
@@ -30,12 +29,11 @@ class Lista {
 
     criarLi(item) {
         let li = document.createElement('li')
-        li.textContent = item.value + ' '
+        li.innerHTML = item + ' '
+        this.ul.appendChild(li)
 
         let criaBtn = this.criarBtn()
         li.appendChild(criaBtn)
-
-        return li
     }
 
     criarBtn() {
@@ -53,8 +51,8 @@ class Lista {
 
         for (let tarefa of liTarefas) {
             let tarefaTexto = tarefa.innerText
-
             tarefaTexto = tarefaTexto.replace('Remover', '').trim()
+
             listaDeTarefas.push(tarefaTexto)
         }
 
@@ -65,7 +63,6 @@ class Lista {
     adicionarTarefasSalvas() {
         const tarefas = localStorage.getItem('tarefas')
         const converterTarefas = JSON.parse(tarefas)
-
 
         for (let t of converterTarefas) {
             this.criarLi(t)
