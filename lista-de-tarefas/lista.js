@@ -11,7 +11,7 @@ class Lista {
         this.btn.addEventListener('click', () => {
             if (this.item.value === '') { return }
 
-            this.criarLi(this.item.value)
+            this.criarTarefa(this.item.value)
 
             this.item.value = ''
             this.item.focus()
@@ -27,7 +27,7 @@ class Lista {
         })
     }
 
-    criarLi(item) {
+    criarTarefa(item) {
         let li = document.createElement('li')
         li.innerHTML = item + ' '
         this.ul.appendChild(li)
@@ -65,7 +65,7 @@ class Lista {
         const converterTarefas = JSON.parse(tarefas)
 
         for (let t of converterTarefas) {
-            this.criarLi(t)
+            this.criarTarefa(t)
         }
     }
 }
