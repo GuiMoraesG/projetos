@@ -1,4 +1,4 @@
-import ValidarCpf from "./modulo/validarCPF"
+import ValidarCpf from "./validarCPF"
 
 class GerarCPF {
     constructor() {
@@ -15,7 +15,7 @@ class GerarCPF {
         const digito1 = ValidarCpf.calcularDigito(cpfSemDigito)
         const digito2 = ValidarCpf.calcularDigito(cpfSemDigito + digito1)
         const cpfFull = cpfSemDigito + digito1 + digito2
-        
+
         this.span.innerHTML = cpfFull
     }
 
