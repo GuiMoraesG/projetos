@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body {
+    background-color: crimson;
+}
+
+h1 {
+    color: white;
+
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.411);
+
+    font-size: 4rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+div {
+    width: 550px;
+
+    background-color: white;
+    border-radius: 8px;
+
+    text-align: center;
+
+    padding: 15px;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.486);
+}
+
+span {
+    display: block;
+
+    font-size: 2rem;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    margin-top: 40px;
+
+    background-color: rgb(218, 72, 101);
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 8px 15px;
+
+    font-size: 1.2rem;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: crimson;
+}
