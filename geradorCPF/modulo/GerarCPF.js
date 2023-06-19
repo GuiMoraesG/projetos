@@ -2,12 +2,11 @@ import ValidarCpf from "./validarCPF"
 
 class GerarCPF {
     constructor() {
-        this.span = document.getElementById('cpfGerado')
         this.click()
     }
 
     click() {
-        document.addEventListener('click', e => { if (e.target.tagName === 'BUTTON') this.criarCPF() })
+        
     }
 
     criarCPF() {
@@ -24,4 +23,4 @@ class GerarCPF {
     }
 }
 
-const gerar = new GerarCPF()
+const ge = new GerarCPF()
