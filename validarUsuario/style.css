@@ -81,3 +81,9 @@ form input[type=submit] {
 form input[type=submit]:hover {
     background-color: rgba(25, 206, 206, 0.733);
 }
+
+.erro {
+    color: red;
+
+    font-size: 0.8rem;
+}

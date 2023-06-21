@@ -11,37 +11,37 @@
 <body>
     <main>
         <div class="divForm">
-            <form>
+            <form id="forms">
                 <h1>Formulário de Cadastro</h1>
 
                 <div>
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nome" class="validar">
                 </div>
 
                 <div>
                     <label for="sobreNome">Sobrenome:</label>
-                    <input type="text" name="sobreNome" id="sobreNome">
+                    <input type="text" name="sobreNome" id="sobreNome" class="validar">
                 </div>
 
                 <div>
                     <label for="cpf">CPF: </label>
-                    <input type="text" name="cpf" id="cpf">
+                    <input type="text" name="cpf" id="cpf" class="validar cpf">
                 </div>
 
                 <div>
                     <label for="user">Usuário: </label>
-                    <input type="text" name="user" id="user">
+                    <input type="text" name="user" id="user" class="validar user">
                 </div>
 
                 <div>
                     <label for="pass">Senha: </label>
-                    <input type="text" name="pass" id="pass">
+                    <input type="text" name="pass" id="pass" class="validar">
                 </div>
 
                 <div>
                     <label for="repetirPass">Repetir Senha: </label>
-                    <input type="text" name="repetirPass" id="repetirPass">
+                    <input type="text" name="repetirPass" id="repetirPass" class="validar">
                 </div>
 
                 <div><input type="submit" value="Enviar"></div>
@@ -50,6 +50,7 @@
     </main>
 
     <script src="validarFormulario.js"></script>
+    <script src="validarCPF.js"></script>
 </body>
 
 </html>
