@@ -5,10 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validar Usuario</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <main>
+        <div class="divForm">
+            <form>
+                <h1>Formulário de Cadastro</h1>
 
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+
+                <div>
+                    <label for="sobreNome">Sobrenome:</label>
+                    <input type="text" name="sobreNome" id="sobreNome">
+                </div>
+
+                <div>
+                    <label for="cpf">CPF: </label>
+                    <input type="text" name="cpf" id="cpf">
+                </div>
+
+                <div>
+                    <label for="user">Usuário: </label>
+                    <input type="text" name="user" id="user">
+                </div>
+
+                <div>
+                    <label for="pass">Senha: </label>
+                    <input type="text" name="pass" id="pass">
+                </div>
+
+                <div>
+                    <label for="repetirPass">Repetir Senha: </label>
+                    <input type="text" name="repetirPass" id="repetirPass">
+                </div>
+
+                <div><input type="button" value="Enviar"></div>
+            </form>
+        </div>
+    </main>
+
+    <script src="validarFormulario.js"></script>
 </body>
 
 </html>
