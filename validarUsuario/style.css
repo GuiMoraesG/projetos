@@ -64,7 +64,7 @@ form input {
     font-size: 1.3rem;
 }
 
-form input[type=button] {
+form input[type=submit] {
     background-color: rgba(10, 119, 119, 0.733);
 
     color: white;
@@ -78,6 +78,6 @@ form input[type=button] {
     padding: 5px;
 }
 
-form input[type=button]:hover {
+form input[type=submit]:hover {
     background-color: rgba(25, 206, 206, 0.733);
 }
