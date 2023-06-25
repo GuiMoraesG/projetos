@@ -18,7 +18,7 @@
                 <h2>Selecione as Opções</h2>
 
                 <p><label for="qtdeChar">Quantidade de caracteres</label> <input type="number" name="qtdeChar"
-                        id="qtdeChar" max="20"></p>
+                        id="qtdeChar" max="20" min="1"></p>
                 <p><label for="addMaiusculas">Adicionar Maiúsculas</label> <input type="checkbox" name="addMaiusculas"
                         id="addMaiusculas"></p>
                 <p><label for="addMinusculas">Adicionar Minúsculas</label> <input type="checkbox" name="addMinusculas"
@@ -27,8 +27,14 @@
                         id="addNumber"></p>
                 <p><label for="addSim">Adicionar Simbolos</label> <input type="checkbox" name="addSim" id="addSim"></p>
 
-                <input type="button" value="Gerar Senha">
+                <input type="button" value="Gerar Senha" class="btn">
 
+            </div>
+
+            <div id="res">
+                <strong>
+                    <p>Aqui irá aparecer sua nova senha !!!</p>
+                </strong>
             </div>
 
         </div>
