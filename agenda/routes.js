@@ -13,4 +13,8 @@ route.post('/login/registro', logincontroller.registro)
 route.post('/login/login', logincontroller.login)
 route.get('/login/logout', logincontroller.logout)
 
+//Contato
+route.get('/contato', contatoController.index)
+route.post('/contato/registro', contatoController.registro)
+
 module.exports = route

@@ -11,10 +11,8 @@ module.exports.registro = async (req, res) => {
         await login.registro()
 
         if (login.erros.length > 0) {
-            req.session.save(() => {
-                req.flash('erros', login.erros)
-                return res.redirect('back')
-            })
+            req.flash('erros', login.erros)
+            req.session.save(() => res.redirect('back'))
 
             return
         }
@@ -35,18 +33,14 @@ module.exports.login = async (req, res) => {
         await login.login()
 
         if (login.erros.length > 0) {
-            req.session.save(() => {
-                req.flash('erros', login.erros)
-                return res.redirect('back')
-            })
+            req.flash('erros', login.erros)
+            req.session.save(() => res.redirect('back'))
             return
         }
 
-        req.session.save(() => {
-            req.flash('sucesso', 'Seu login foi realizado com sucesso !!!')
-            req.session.user = login.user
-            return res.redirect('back')
-        })
+        req.flash('sucesso', 'Seu login foi realizado com sucesso !!!')
+        req.session.user = login.user
+        req.session.save(() => res.redirect('back'))
     } catch (e) {
         console.log(e)
     }
