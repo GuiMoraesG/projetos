@@ -51,6 +51,23 @@ class Login {
             senha: this.body.senha
         }
     }
+
+    async login() {
+        this.valida()
+        if (this.erros.length > 0) return
+
+        this.user = await LoginModel.findOne({ email: this.body.email })
+        if (!this.user) {
+            this.erros.push('E-mail ainda não foi registrado, por favor criar uma conta !!!')
+            return
+        }
+
+        if (!bcrypt.compareSync(this.body.senha, this.user.senha)) {
+            this.erros.push('Senha inválida')
+            this.user = null
+            return
+        }
+    }
 }
 
 module.exports = Login

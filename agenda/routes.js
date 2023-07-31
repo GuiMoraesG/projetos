@@ -10,6 +10,7 @@ route.get('/', homeController.paginaInicial)
 //Login
 route.get('/login', logincontroller.index)
 route.post('/login/registro', logincontroller.registro)
-
+route.post('/login/login', logincontroller.login)
+route.get('/login/logout', logincontroller.logout)
 
 module.exports = route
