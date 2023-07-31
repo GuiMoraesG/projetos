@@ -4,9 +4,9 @@ exports.index = (req, res) => {
     res.render('contato')
 }
 
-exports.registro = (req, res) => {
+exports.registro = async (req, res) => {
     const contato = new Contato(req.body)
-    contato.registro()
+    await contato.registro()
 
     if (contato.erros.length > 0) {
         req.flash('erros', contato.erros)
