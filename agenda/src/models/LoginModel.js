@@ -6,7 +6,7 @@ const bcrypt = require('bcrypt')
 const LoginSchema = new mongoose.Schema({
     email: { type: String, require: true },
     senha: { type: String, require: true },
-    data: { type: Date, default: Date.now({}) }
+    data: { type: Date, default: Date.now }
 })
 
 const LoginModel = mongoose.model('Login', LoginSchema)

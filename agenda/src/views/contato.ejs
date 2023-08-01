@@ -10,39 +10,33 @@
 
             <%- include('includes/mensagens') %>
 
-            <div class="row">
-
-                <div class="col-lg">
-                    <h4>Cadastrar Contato</h4>
-
+                <% if (!c._id) { %>
                     <form action="/contato/registro" method="POST">
-                        
+                <% } else { %>
+                    <form action="/contato/edit/<%= c._id %>" method="POST">
+                <% } %>
                         <div class="mb-3">
                             <label for="nome">Nome: </label>
-                            <input type="text" class="form-control" name="nome">
+                            <input type="text" value="<%= c.nome %>" class="form-control" name="nome">
                         </div>
 
                         <div class="mb-3">
                             <label for="sobrenome">Sobrenome: </label>
-                            <input type="text" class="form-control" name="sobrenome">
+                            <input type="text" value="<%= c.sobrenome %>" class="form-control" name="sobrenome">
                         </div>
 
                         <div class="mb-3">
                             <label for="email">E-mail: </label>
-                            <input type="email" class="form-control" name="email">
+                            <input type="email" value="<%= c.email %>" class="form-control" name="email">
                         </div>
 
                         <div class="mb-3">
                             <label for="tell">Telefone: </label>
-                            <input type="tel" class="form-control" name="tell">
+                            <input type="tel"  value="<%= c.tell %>" class="form-control" name="tell">
                         </div>
 
                         <button type="submit" class="btn btn-primary">Criar contato</button>
                     </form>
-
-                </div>
-
-            </div>
 
         </div>
 

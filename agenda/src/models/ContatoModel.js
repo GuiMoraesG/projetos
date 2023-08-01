@@ -39,6 +39,25 @@ class Contato {
             tell: this.body.tell
         }
     }
+
+    async buscaPorId(id) {
+        const cont = await ContatoModel.findById(id)
+
+        return cont
+    }
+
+    async editarContato(id) {
+        this.valida()
+        if (this.erros.length > 0) return
+
+        this.contato = await ContatoModel.findByIdAndUpdate(id, this.body, { new: true })
+    }
+
+    async acharContatos() {
+        const contatos = await ContatoModel.find()
+
+        return contatos
+    }
 }
 
 module.exports = Contato
