@@ -17,10 +17,9 @@ module.exports.registro = async (req, res) => {
             return
         }
 
-        req.session.save(() => {
-            req.flash('sucesso', 'Seu usuário foi criado !!!')
-            return res.redirect('back')
-        })
+        req.flash('sucesso', 'Seu usuário foi criado !!!')
+        req.session.save(() => res.redirect('back'))
+        
     } catch (e) {
         console.log(e)
     }
