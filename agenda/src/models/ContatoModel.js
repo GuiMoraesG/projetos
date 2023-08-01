@@ -58,6 +58,10 @@ class Contato {
 
         return contatos
     }
+
+    async deletar(id) {
+        await ContatoModel.findByIdAndDelete(id)
+    }
 }
 
 module.exports = Contato

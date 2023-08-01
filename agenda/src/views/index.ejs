@@ -21,7 +21,7 @@
                             <td><%- c.email %></td>
                             <td><%- c.tell %></td>
                             <td><a href="/contato/<%- c._id %>">Editar</a></td>
-                            <td><a href="#" class="text-danger">Excluir</a></td>
+                            <td><a href="/contato/deletar/<%- c._id %>" class="text-danger">Excluir</a></td>
                         </tr>
                     <% }) %>
                 </table>

@@ -37,3 +37,12 @@ exports.edit = async (req, res) => {
     req.flash('sucesso', 'Seu contato foi editado com sucesso !!')
     req.session.save(() => res.redirect('back'))
 }
+
+exports.deletar = async (req, res) => {
+    const contato = new Contato()
+    await contato.deletar(req.params.id)
+
+    req.flash('sucesso', 'Contato excluído com sucesso')
+    req.session.save(() => res.redirect('back'))
+    return
+}
