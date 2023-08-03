@@ -1,8 +1,8 @@
 const express = require('express')
 const route = express.Router()
+const homeController = require('./src/controllers/homeController')
 
-route.get('/', (req, res) => {
-    res.send('OUI')
-})
+
+route.get('/', homeController.index)
 
 module.exports = route
