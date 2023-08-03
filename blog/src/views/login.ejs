@@ -1,0 +1,37 @@
+<%- include('includes/head') %>
+<%- include('includes/nav') %>
+
+<div class="container mt-4">
+
+    <h1 class="pb-5">Crie sua conta abaixo:</h1>
+
+    <form action="/login/registrar" method="POST">
+
+        <div class="mb-3">
+
+          <label for="email" class="form-label">E-mail: </label>
+          <input type="email" class="form-control" name="email">
+          
+        </div>
+
+        <div class="mb-3">
+
+          <label for="senha" class="form-label">Senha: </label>
+          <input type="password" class="form-control" name="senha">
+
+        </div>
+
+        <div class="mb-3">
+
+            <label for="confirmacaoDeSenha" class="form-label">Repetir Senha: </label>
+            <input type="password" class="form-control" name="confirmacaoDeSenha">
+  
+        </div>
+
+        <button type="submit" class="btn btn-primary">Criar Conta</button>
+
+      </form>
+
+</div>
+
+<%- include('includes/footer') %>
