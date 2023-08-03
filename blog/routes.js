@@ -9,6 +9,8 @@ route.get('/', homeController.index)
 //Login
 route.get('/login', loginController.index)
 route.post('/login/registrar', loginController.registrar)
+route.get('/login/logarUsuario', loginController.formularioLogar)
+route.post('/login/login', loginController.login)
 
 
 module.exports = route

@@ -3,11 +3,11 @@
 
 <div class="container mt-4">
 
-    <h1 class="pb-5">Crie sua conta abaixo:</h1>
+    <h1 class="pb-5">Entre em sua Conta abaixo:</h1>
 
     <%- include('includes/flash') %>
 
-    <form action="/login/registrar" method="POST">
+    <form action="/login/login" method="POST">
 
         <div class="mb-3">
 
@@ -23,16 +23,10 @@
 
         </div>
 
-        <div class="mb-3">
-
-            <label for="confirmacaoDeSenha" class="form-label">Repetir Senha: </label>
-            <input type="password" class="form-control" name="confirmacaoDeSenha">
-  
-        </div>
         <p>
-          <a href="/login/logarUsuario">Já tenho uma conta</a>
+          <a href="/login">Não tenho uma conta</a>
         </p>
-        <button type="submit" class="btn btn-primary">Criar Conta</button>
+        <button type="submit" class="btn btn-primary">Entrar</button>
 
       </form>
 
