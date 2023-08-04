@@ -1,0 +1,42 @@
+<%- include('includes/head') %>
+<%- include('includes/nav') %>
+
+<div class="container mt-4">
+
+    <h1 class="pb-5">Adicionar Postagem: </h1>
+
+    <%- include('includes/flash') %>
+
+    <form action="/posts/registrar" method="POST">
+
+        <div class="mb-3">
+
+          <label for="titulo" class="form-label">Título: </label>
+          <input type="text" class="form-control" name="titulo">
+          
+        </div>
+
+        <div class="mb-3">
+
+          <label for="categoria" class="form-label">Categoria: </label>
+          <select name="categoria">
+            <option value="PHP">PHP</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JQUERY">JQUERY</option>
+            <option value="Python">Python</option>
+            <option value="Angular">Angular</option>
+          </select>
+
+        </div>
+        
+        <div><textarea name="conteudo" cols="100" rows="5" placeholder="Digite á vontade"></textarea></div>
+
+        <button type="submit" class="btn btn-primary">Adicionar Post </button>
+
+      </form>
+
+</div>
+
+<%- include('includes/footer') %>

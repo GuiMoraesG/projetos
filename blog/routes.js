@@ -2,6 +2,7 @@ const express = require('express')
 const route = express.Router()
 const homeController = require('./src/controllers/homeController')
 const loginController = require('./src/controllers/loginController')
+const postsController = require('./src/controllers/postsController')
 
 // Home
 route.get('/', homeController.index)
@@ -12,5 +13,8 @@ route.post('/login/registrar', loginController.registrar)
 route.get('/login/logarUsuario', loginController.formularioLogar)
 route.post('/login/login', loginController.login)
 
+//Posts
+route.get('/posts', postsController.index)
+route.post('/posts/registrar', postsController.registrar)
 
 module.exports = route
