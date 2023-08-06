@@ -18,5 +18,6 @@ route.get('/posts', postsController.index)
 route.post('/posts/registrar', postsController.registrar)
 route.get('/posts/:id', postsController.editIndex)
 route.post('/posts/edit/:id', postsController.edit)
+route.get('/posts/deletar/:id', postsController.deletar)
 
 module.exports = route

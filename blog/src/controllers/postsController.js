@@ -32,3 +32,11 @@ exports.edit = async (req, res) => {
     req.flash('sucesso', 'Esse Post foi editado com sucesso!!')
     req.session.save(() => res.redirect('back'))
 }
+
+exports.deletar = (req, res) => {
+    const posts = new Posts()
+    posts.deletar(req.params.id)
+
+    req.flash('sucesso', 'Post excluido com sucesso !!')
+    req.session.save(() => res.redirect('back'))
+}

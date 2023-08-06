@@ -45,6 +45,10 @@ class Posts {
 
         return posts
     }
+
+    async deletar(id) {
+        await PostsModel.findByIdAndDelete(id)
+    }
 }
 
 module.exports = Posts
