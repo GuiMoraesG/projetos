@@ -16,7 +16,29 @@
 
     <h2>Postagens Recentes: </h2>
 
+  <% post.forEach(posts => { %>
+
+    <div class="card mb-4">
+
+      <div class="card-body">
+
+        <h5 class="card-title"><%= posts.titulo %></h5>
+
+        <p class="card-text">Categoria: <%= posts.categoria %></p>
+
+        <p class="card-text"><%= posts.conteudo %></p>
+
+        <a href="#" class="btn btn-primary">Ver mais sobre</a>
+
+        <hr>
+
+        <a href="/posts/<%= posts._id %>" class="btn btn-primary btn-success">Editar Post</a>
+        <a href="/posts/deletar/<%= posts._id %>" class="btn btn-primary btn-danger">Excluir Post</a>
+      </div>
+
+    </div>
     
+  <% }) %>    
 
 </div>
 

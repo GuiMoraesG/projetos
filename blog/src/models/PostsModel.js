@@ -41,7 +41,7 @@ class Posts {
     }
 
     async procurarPosts() {
-        const posts = await PostsModel.find()
+        const posts = await PostsModel.find().sort({ Data: -1 })
 
         return posts
     }
