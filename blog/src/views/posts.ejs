@@ -3,16 +3,23 @@
 
 <div class="container mt-4">
 
+  <% if (!post._id) { %>
     <h1 class="pb-5">Adicionar Postagem: </h1>
+  <% } else { %>
+    <h1 class="pb-5">Atualizar Postagem: </h1>
+  <% } %>  
 
     <%- include('includes/flash') %>
 
+  <% if (!post._id) { %>
     <form action="/posts/registrar" method="POST">
-
+  <% } else { %>
+    <form action="/posts/edit/<%= post._id %>" method="POST">
+  <% } %>  
         <div class="mb-3">
 
           <label for="titulo" class="form-label">Título: </label>
-          <input type="text" class="form-control" name="titulo">
+          <input type="text" value="<%= post.titulo %>" class="form-control" name="titulo">
           
         </div>
 
@@ -31,9 +38,16 @@
 
         </div>
         
-        <div><textarea name="conteudo" cols="100" rows="5" placeholder="Digite á vontade"></textarea></div>
+        <div><textarea name="conteudo" cols="100" rows="5" placeholder="Digite á vontade"><%= post.conteudo %></textarea></div>
 
-        <button type="submit" class="btn btn-primary">Adicionar Post </button>
+        <% if (!post._id) { %>
+          <button type="submit" class="btn btn-primary">Adicionar Post </button>
+        <% } else { %>
+          <button type="submit" class="btn btn-primary">Atualizar Post </button>
+        <% } %>  
+        
+
+
 
       </form>
 
