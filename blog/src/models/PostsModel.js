@@ -39,6 +39,12 @@ class Posts {
 
         await PostsModel.findByIdAndUpdate(id, this.body, { new: true })
     }
+
+    async procurarPosts() {
+        const posts = await PostsModel.find()
+
+        return posts
+    }
 }
 
 module.exports = Posts
