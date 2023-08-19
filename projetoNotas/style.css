@@ -49,7 +49,7 @@ input {
     padding: 5px;
 }
 
-input[type='button'] {
+input[type='submit'] {
     width: 150px;
 
     padding: 5px;
@@ -63,4 +63,12 @@ table {
 
 table td {
     text-align: center;
+}
+
+.aprovado {
+    background-color: rgb(16, 199, 16);
+}
+
+.reprovado {
+    background-color: red
 }
