@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+:root {
+    --corHeader: #ece2d6;
+    --corFooter: #fc4c02;
+}
+
+body {
+    margin: 3.13%;
+
+    height: 100vh;
+}
+
+header {
+    max-width: 93.75%;
+    height: 180px;
+
+    margin: auto;
+    padding: 2.47% 5.47% 0px 5.47%;
+
+    background-color: #ece2d6;
+}
+
+.container {
+    display: flex;
+
+    height: 100%;
+}
+
+.images-left {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.mandaTrends {
+    width: 295px;
+}
+
+.bolinhas {
+    margin-left: 315px;
+}
+
+.images-right {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mulher {
+    width: 225px;
+}
+
+.images-right p {
+    color: white;
+
+    font-weight: bold;
+    font-size: 20px;
+
+    text-align: end;
+}
+
+.images-right>div {
+    width: 50%;
+}
+
+.triangulo {
+    margin-left: 300px;
+
+    width: 25px;
+    height: 25px;
+
+    background-image: url(../imagens/triangulo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.zigzag {
+    margin-left: 235px;
+
+    width: 65px;
+    height: 15px;
+
+    background-image: url(../imagens/zigzag.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.images-right .edicao {
+    font-size: 13px;
+}
