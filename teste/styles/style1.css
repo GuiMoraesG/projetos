@@ -16,16 +16,14 @@
 
 body {
     margin: 3.13%;
-
-    height: 100vh;
 }
 
 header {
-    max-width: 93.75%;
+    max-width: 100%;
     height: 180px;
 
     margin: auto;
-    padding: 2.47% 5.47% 0px 25px;
+    padding: 2.47% 5.83% 0px 5.83%;
 
     background-color: #ece2d6;
 }
@@ -110,15 +108,110 @@ header {
 .containerMain {
     max-width: 100%;
     margin: auto;
-    padding: 35px 5.47% 0px 5.47%;
+    padding: 2.47% 5.83% 0px 5.83%;
+
+    text-align: center;
+    font-size: 2em;
 }
 
 .imgNRF {
     width: 100%;
-    height: 645px;
+    height: 679px;
 
-    background-image: url(../imagens/NRF.png);
+    background-image: url(../imagens/NRFTrue.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.containerMain h1 {
+    padding-top: 15px;
+}
+
+.containerMain p {
+    padding-top: 8px;
+
+    color: #dddede;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.192);
+}
+
+blockquote {
+    padding-top: 15px;
+
+    color: #dddede;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.192);
+
+    text-align: left;
+
+    font-size: 0.5em;
+}
+
+.degrade-vr {
+    background-image: linear-gradient(to left, #8878ce, #f03f54);
+
+    width: 45%;
+    height: 10px;
+
+    margin-top: 15px;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+
+    padding-top: 2.47%;
+
+    font-size: 1.2rem;
+}
+
+.containerImg-1 {
+    width: 48%;
+}
+
+.containerImg-2 {
+    width: 48%;
+}
+
+.imgBasket {
+    width: 100%;
+    height: 460px;
+
+    background-image: url(../imagens/basket.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgWhatsApp {
+    width: 100%;
+    height: 460px;
+
+    background-image: url(../imagens/whatsApp.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.section-2 blockquote {
+    font-size: 1.2rem;
+}
+
+.degrade-aa {
+    background-image: linear-gradient(to left, #9cdee8, #766ed8);
+
+    width: 45%;
+    height: 10px;
+
+    margin-top: 15px;
+}
+
+.degrade-av {
+    background-image: linear-gradient(to left, #ade6ec, #73e1ae);
+
+    width: 45%;
+    height: 10px;
+
+    margin-top: 15px;
 }
