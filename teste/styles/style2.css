@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.images-left {
+    width: 100%;
+}
+
+.images-left :nth-child(2) {
+    display: none;
+}
+
+.mandaTrends {
+    width: 365px;
+}
+
+.images-right {
+    display: none;
+}
+
+.section-2 {
+    flex-direction: column;
+}
+
+.section-2 :nth-child(2) {
+    margin-top: 25px;
+}
+
+.containerImg-1 {
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.containerImg-2 {
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.containerFooter img {
+    width: 360px;
+}
