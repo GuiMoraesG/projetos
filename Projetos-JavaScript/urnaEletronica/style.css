@@ -134,6 +134,8 @@
 }
 
 .infoPresidente {
+    display: none;
+
     margin-top: 25px;
 
     font-size: 1.6rem;
@@ -198,4 +200,12 @@ table tr:nth-child(5) td:nth-child(3) {
 
 .container2 {
     width: 100%;
+}
+
+p.titulo {
+    display: none;
+
+    font-size: 1.4rem;
+
+    text-align: right;
 }
