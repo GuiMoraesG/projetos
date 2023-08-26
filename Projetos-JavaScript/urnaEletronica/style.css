@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+@keyframes pisca {
+    0% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,21 +35,113 @@
     background-color: beige;
 
     width: 100%;
-    height: 450px;
 
     padding: 8px;
 }
 
 .telaUrna {
+    display: grid;
+    justify-items: start;
+    align-items: end;
+    align-content: space-between;
+
     background-color: rgb(197, 195, 195);
 
     border: 1px solid black;
 
     width: 50%;
+
+    padding: 5px;
+}
+
+.informacoesVisuais {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fotos {
+    display: grid;
+    justify-items: end;
+    align-items: start;
+
+    width: 35%;
+    height: 290px;
+}
+
+.fotoPresidente {
+    display: none;
+
+    width: 100%;
+    height: 185px;
+
+    background-color: green;
+    color: white;
+
+    text-align: center;
+    font-size: 3rem;
+}
+
+.fotoVicePresidente {
+    display: none;
+
+    width: 80%;
+    height: 105px;
+
+    background-color: purple;
+    color: white;
+
+    text-align: center;
+    font-size: 3rem;
+}
+
+.pisca {
+    animation-name: pisca;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.auxilio {
+    display: none;
+    width: 100%;
+
+    border-top: 2px solid black;
+}
+
+.telaUrna input {
+    margin-top: 25px;
+    margin-left: 8px;
+
+    width: 55px;
+    height: 65px;
+
+    background-color: rgb(197, 195, 195);
+
+    border: 1px solid black;
+
+    text-align: center;
+
+    font-size: 1.7rem;
+}
+
+.voto {
+    display: flex;
+    flex-direction: column;
+}
+
+.voto p {
+    display: inline;
+}
+
+.infoPresidente {
+    margin-top: 25px;
+
+    font-size: 1.6rem;
 }
 
 .btnUrna {
-    width: 35%;
+    width: 30%;
+    height: 345px;
 
     background-color: rgba(0, 0, 0, 0.849);
 }
@@ -78,10 +184,18 @@ table tr:nth-child(5) td:nth-child(1) {
 
 table tr:nth-child(5) td:nth-child(2) {
     background-color: red;
+    color: black;
+
     font-size: 20px;
 }
 
 table tr:nth-child(5) td:nth-child(3) {
     background-color: green;
+    color: black;
+
     font-size: 20px;
+}
+
+.container2 {
+    width: 100%;
 }
