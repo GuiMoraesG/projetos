@@ -22,8 +22,8 @@ class Urna {
     }
 
     incrementarDigitos(valor) {
-        this.digito1.value = valor
-
+        if (!this.digito1.value) return this.digito1.value = valor
+        this.digito2.value = valor
 
         this.telaUrna()
     }

@@ -166,9 +166,11 @@
 
 table td {
     background-color: black;
+    border: 2px solid black;
+
     width: 35px;
 
-    padding: 10px;
+    padding: 8px;
 
     cursor: pointer;
 }
