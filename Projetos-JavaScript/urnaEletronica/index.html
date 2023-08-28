@@ -18,7 +18,7 @@
                     <div class="informacoesVisuais">
                         <div class="voto">
                             <h1>Seu Voto para</h1>
-                            <p class="titulo"><span>Vereador</span></p>
+                            <p class="titulo"></p>
                             <div>
                                 <p><input class="digito1 pisca" type="number" id=""></p>
                                 <p><input class="digito2" type="number" id=""></p>
@@ -32,9 +32,9 @@
                     </div>
 
                     <div class="infoPresidente">
-                        <p><strong>Nome</strong>: <span></span></p>
-                        <p><strong>Partido</strong>: <span></span></p>
-                        <p><strong>Vice-Prefeito</strong>: <span></span></p>
+                        <p><strong>Nome</strong>: <span class="nomeCandidato"></span></p>
+                        <p><strong>Partido</strong>: <span class="partidoCandidato"></span></p>
+                        <p><strong>Vice-Prefeito</strong>: <span class="VCPrefeito"></span></p>
                     </div>
                 </div>
 
@@ -42,7 +42,7 @@
                     <p>
                         Aperte: <br>
                         CONFIRMAR: para Confirmar seu Voto. <br>
-                        CORRIGE
+                        CORRIGE: Para resetar seu voto.
                     </p>
                 </div>
             </div>
@@ -73,9 +73,9 @@
                     </tr>
 
                     <tr>
-                        <td>BRANCO</td>
-                        <td>CORRIGE</td>
-                        <td>CONFIRMA</td>
+                        <td class="btn-votarBranco">BRANCO</td>
+                        <td class="btn-corrige">CORRIGE</td>
+                        <td class="btn-confirma">CONFIRMA</td>
                     </tr>
                 </table>
 
