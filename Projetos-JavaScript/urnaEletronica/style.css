@@ -125,6 +125,7 @@
 }
 
 .voto {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -210,4 +211,12 @@ p.titulo {
     font-size: 1.4rem;
 
     text-align: right;
+}
+
+.fim {
+    position: absolute;
+    
+    transform: translate(60%, -25%);
+
+    font-size: 8rem;
 }

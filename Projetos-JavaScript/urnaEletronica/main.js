@@ -8,6 +8,7 @@ class Urna {
         this.digito1 = document.querySelector('.digito1')
         this.digito2 = document.querySelector('.digito2')
         this.etapaAtual = 0
+        this.branco = false
 
         this.btnUrnas()
     }
@@ -59,18 +60,27 @@ class Urna {
     }
 
     confirma() {
-        if (!this.digito1.value || !this.digito2) {
-            return alert('Digite os valores abaixo')
+        if (this.branco) {
+            alert('Você votou em BRANCO')
+            this.msgdeFim()
+            return
         }
 
-        this.etapaAtual = 1
-        this.corrige()
+        if (!this.digito1.value || !this.digito2) { return alert('Digite os valores abaixo') }
+
+        if (this.etapaAtual !== 1) {
+            alert('Você já realizou seu primeiro voto !')
+            this.corrige()
+            this.etapaAtual = 1
+            return
+        }
 
         if (this.etapaAtual === 1) {
-            
+            alert('Votação encerrada !')
+            this.etapaAtual = 0
+            this.msgdeFim()
+            return
         }
-
-
         alert('oi')
     }
 
@@ -87,6 +97,7 @@ class Urna {
         this.titulo.style.display = 'block'
         this.titulo.style.display = 'block'
         this.titulo.innerText = 'VOTO EM BRACO'
+        this.branco = true
 
     }
 
@@ -102,6 +113,17 @@ class Urna {
         this.fotoPresidente.style.display = 'block'
         this.auxilio.style.display = 'block'
         this.infoPresidente.style.display = 'block'
+    }
+
+    msgdeFim() {
+        this.semTelaUrna()
+        this.digito1.style.display = 'none'
+        this.digito2.style.display = 'none'
+
+        const msgVoto = document.querySelector('.msgVoto')
+        msgVoto.innerText = 'FIM!'
+        this.titulo.style.display = 'none'
+        msgVoto.setAttribute('class', 'fim')
     }
 }
 
