@@ -1,6 +1,12 @@
 const keys = document.querySelectorAll('.key')
 
 function playNotes(event) {
+    let audioKeyCode = getKeyCode(event)
+    const key = document.querySelector(`[data-key="${audioKeyCode}"]`)
+    console.log(key)
+}
+
+function getKeyCode(event) {
     let keyCode;
     const isKeyboard = event.type === 'keydown'
 
@@ -9,8 +15,8 @@ function playNotes(event) {
     } else {
         keyCode = event.target.dataset.key
     }
-    console.log(event.type)
-    console.log(keyCode)
+
+    return keyCode
 }
 
 keys.forEach(key => {
