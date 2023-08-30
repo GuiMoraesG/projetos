@@ -7,7 +7,12 @@ function playNotes(event) {
 
     if (!isKeyExists) return
 
+    addPlayingClass(key)
     playAudio(audioKeyCode)
+}
+
+function addPlayingClass(key) {
+    key.classList.add('playing')
 }
 
 function getKeyCode(event) {
@@ -29,8 +34,17 @@ function playAudio(audioKeyCode) {
     audio.play()
 }
 
-keys.forEach(key => {
-    key.addEventListener('click', playNotes)
-})
+function removePlayingClass(event) {
+    event.target.classList.remove('playing')
+}
 
-window.addEventListener('keydown', playNotes)
+function registerEvents() {
+    keys.forEach(key => {
+        key.addEventListener('click', playNotes)
+        key.addEventListener('transitionend', removePlayingClass)
+    })
+
+    window.addEventListener('keydown', playNotes)
+}
+
+window.addEventListener('load', registerEvents)
