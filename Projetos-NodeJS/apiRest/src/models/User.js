@@ -15,9 +15,8 @@ export default class User extends Model {
           msg: 'E-mail já registrado',
         },
         validate: {
-          len: {
-            args: [3, 255],
-            msg: 'O nome precisa ter no mínimo 3 caracteres',
+          isEmail: {
+            msg: 'E-mail inválido',
           },
         },
       },
@@ -40,7 +39,7 @@ export default class User extends Model {
     });
 
     this.addHook('beforeSave', async (user) => {
-      user.password_hash = await bcryptjs.hash(user.password, 8);
+      if (user.password) user.password_hash = await bcryptjs.hash(user.password, 8);
     });
     return this;
   }
