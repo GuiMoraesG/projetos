@@ -7,6 +7,12 @@ export default class User extends Model {
       nome: {
         type: Sequelize.STRING,
         defaultValue: '',
+        validate: {
+          len: {
+            args: [3, 255],
+            msg: 'O campo nome precisa ter no mínimo 3 caracteres',
+          },
+        },
       },
       email: {
         type: Sequelize.STRING,
