@@ -1,5 +1,6 @@
 const DatabaseMemory = require('../config/database-memory');
 const database = new DatabaseMemory();
+const Video = require('../model/video');
 
 module.exports.index = (req, res) => {
     const { search } = req.query;
@@ -8,8 +9,9 @@ module.exports.index = (req, res) => {
     return res.json(videos);
 };
 
-module.exports.store = (req, res) => {
+module.exports.store = async (req, res) => {
     database.create(req.body);
+    await Video.create(req.body)
 
     return res.status(201).json({ success: 'Criado !' });
 };

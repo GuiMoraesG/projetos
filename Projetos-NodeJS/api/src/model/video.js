@@ -1,61 +1,20 @@
 const { Sequelize, Model } = require('sequelize');
 
-module.exports = class videos extends Model {
+module.exports = class Videos extends Model {
   static init(sequelize) {
     super.init({
-      nome: {
+      title: {
         type: Sequelize.STRING,
-        validate: {
-          len: {
-            args: [3, 255],
-            msg: 'O campo nome precisa conter no mínimo 3 caracteres',
-          },
-        },
+        allowNull: false,
       },
-      sobrenome: {
-        type: Sequelize.STRING,
-        validate: {
-          len: {
-            args: [3, 255],
-            msg: 'O campo Sobrenome precisa conter no mínimo 3 caracteres',
-          },
-        },
-      },
-      email: {
-        type: Sequelize.STRING,
-        unique: {
-          msg: 'Email já registrado',
-        },
-        validate: {
-          isEmail: {
-            msg: 'E-mail inválido',
-          },
-        },
-      },
-      idade: {
+      description: {
         type: Sequelize.INTEGER,
-        validate: {
-          isNumeric: {
-            msg: 'O campo idade precisa ser um número válido',
-          },
-        },
+        allowNull: false,
       },
-      peso: {
-        type: Sequelize.FLOAT,
-        validate: {
-          isNumeric: {
-            msg: 'O campo peso precisa ser um número válido',
-          },
-        },
-      },
-      altura: {
-        type: Sequelize.FLOAT,
-        validate: {
-          isNumeric: {
-            msg: 'O campo altura precisa ser um número válido',
-          },
-        },
-      },
+      duration: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      }
     }, {
       sequelize,
     });
