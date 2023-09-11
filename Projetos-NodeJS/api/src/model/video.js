@@ -1,6 +1,6 @@
-import Sequelize, { Model } from 'sequelize';
+const { Sequelize, Model } = require('sequelize');
 
-export default class videos extends Model {
+module.exports = class videos extends Model {
   static init(sequelize) {
     super.init({
       nome: {
