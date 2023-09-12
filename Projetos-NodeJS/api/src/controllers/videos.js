@@ -10,10 +10,16 @@ module.exports.index = (req, res) => {
 };
 
 module.exports.store = async (req, res) => {
-    database.create(req.body);
-    await Video.create(req.body)
+    try {
+        database.create(req.body);
+        await Video.create(req.body);
 
-    return res.status(201).json({ success: 'Criado !' });
+        return res.status(201).json({ success: 'Criado !' });
+    } catch (e) {
+        return res.status(400).json({
+            errors: e.errors.map((err) => err.message),
+        });
+    }
 };
 
 module.exports.update = (req, res) => {
