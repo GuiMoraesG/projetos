@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
 
-const homeRouter = require('./routers/home');
+const taskRouter = require('./routers/task');
 
-app.use(homeRouter);
+app.use(express.json());
+app.use(taskRouter);
 
 module.exports = app;
