@@ -9,7 +9,14 @@ class TaskModel {
 
     async createTask(body) {
         const { TITLE } = body;
-        const task = await connection.execute(`insert into tasks (TITLE, STATUS) values ('${TITLE}', 'Pendente')`);
+
+        if (!TITLE) return 'wrong';
+
+        await connection.execute(`insert into tasks (TITLE, STATUS) values ('${TITLE}', 'Pendente')`);
+    }
+
+    async deleteTask(id) {
+        const task = await connection.execute(`delete from tasks where id='${id}'`);
 
         return task;
     }
