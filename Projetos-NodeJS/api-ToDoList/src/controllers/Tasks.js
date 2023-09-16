@@ -22,6 +22,22 @@ class TaskController {
             return res.status(400).json({ errors: 'BAD CONNECTION' });
         }
     }
+    
+    async update(req, res) {
+        try {
+            if (!req.body.STATUS) return res.status(400).json({ errors: 'Please, you must change the status' });
+            if (!req.body.TITLE) return res.status(400).json({ errors: 'Please, insert data on the field TITLE' });
+
+            const { id } = req.params;
+            const [task] = await taskModel.updateTask(id, req.body);
+
+            if (task.affectedRows == 0) return res.status(400).json({ errors: 'Task not found' });
+
+            return res.status(200).json(task);
+        } catch (e) {
+            return res.status(400).json({ errors: 'BAD CONNECTION' });
+        }
+    }
 
     async delete(req, res) {
         try {
