@@ -8,6 +8,11 @@ function somarMultiplos() {
         return;
     }
 
+    if (digito < 0) {
+        alert("Números negativos não funciona");
+        return;
+    }
+
     for (let i = 0; i < digito; i++) {
         if (i % 3 == 0 || i % 5 == 0) {
             total += i;
