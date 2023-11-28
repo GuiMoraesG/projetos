@@ -24,5 +24,8 @@ module.exports = {
   rules: {
     'linebreak-style': 'off',
     'no-console': 'off',
+    'import/newline-after-import': 'off',
+    'indent': 'off',
+    'quote-props': 'off',
   },
 };
