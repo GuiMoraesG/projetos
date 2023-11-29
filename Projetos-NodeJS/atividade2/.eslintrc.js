@@ -27,5 +27,6 @@ module.exports = {
     'import/newline-after-import': 'off',
     'indent': 'off',
     'quote-props': 'off',
+    'no-param-reassign': 'off',
   },
 };

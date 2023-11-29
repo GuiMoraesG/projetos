@@ -15,12 +15,12 @@ module.exports = {
       allowNull: false,
       unique: true,
     },
-    password_hash: {
+    numero: {
       type: Sequelize.STRING,
       allowNull: false,
     },
-    numero: {
-      type: Sequelize.INTEGER,
+    password_hash: {
+      type: Sequelize.STRING,
       allowNull: false,
     },
     created_at: {
