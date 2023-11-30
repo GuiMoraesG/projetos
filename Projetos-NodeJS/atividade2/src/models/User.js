@@ -17,13 +17,13 @@ module.exports = class User extends Model {
             email: {
                 type: Sequelize.STRING,
                 defaultValue: '',
-                unique: {
-                    msg: 'E-mail já registrado',
-                },
                 validate: {
                     isEmail: {
                         msg: 'E-mail inválido',
                     },
+                },
+                unique: {
+                    msg: 'E-mail já existente',
                 },
             },
             numero: {

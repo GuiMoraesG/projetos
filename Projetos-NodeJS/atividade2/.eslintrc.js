@@ -28,5 +28,7 @@ module.exports = {
     'indent': 'off',
     'quote-props': 'off',
     'no-param-reassign': 'off',
+    'camelcase': 'off',
+    'object-curly-newline': 'off',
   },
 };
